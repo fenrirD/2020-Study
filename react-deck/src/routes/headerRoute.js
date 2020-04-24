@@ -1,17 +1,20 @@
 
 const headerRoutes =  [
 
+
     {
-        path: '/DeckGL/:param',
-        param: '/DeckGL',
+        path: '/deckGL/:param',
+        param: '/deckGL/lineLayer',
         name: 'DeckGL'
     },
     {
-        path: '/2',
-        name: '2'
+        path: '/resium/:param',
+        param: '/resium/basic',
+        name: 'RESIUM'
     },
     {
-        path: '/3',
+        path: '/3/:param',
+        param: '/3',
         name: '3'
     },
     {

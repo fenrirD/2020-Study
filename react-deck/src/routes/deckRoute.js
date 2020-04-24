@@ -1,16 +1,17 @@
 import DeckTest from '../components/deckGl/test'
 import HexagonLayerCom from "../components/deckGl/hexagonLayer";
+import Camera1 from "../components/resium/camera"
 import React from "react"
 
 const deckRoutes =  {
-    deckGl : [
+    deckGL : [
         {
-            path: '/DeckGL/lineLayer',
+            path: '/deckGL/lineLayer',
             name: 'lineLayer',
             component : DeckTest
         },
         {
-            path: '/DeckGL/hexagonLayer',
+            path: '/deckGL/hexagonLayer',
             name: 'hexagonLayer',
 
 
@@ -18,7 +19,23 @@ const deckRoutes =  {
             component : () => <HexagonLayerCom/>
         },
 
-    ]
+    ],
+    resium : [
+        {
+            path: '/resium/basic',
+            name: 'basic',
+            component : () => <Camera1/>
+        },
+        {
+            path: '/resium/2',
+            name: '2',
+
+
+            // eslint-disable-next-line react/react-in-jsx-scope
+          //  component : () => <HexagonLayerCom/>
+        },
+
+    ],
 
 }
 

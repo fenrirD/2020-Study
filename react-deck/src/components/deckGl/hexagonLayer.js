@@ -111,6 +111,7 @@ class HexagonLayerCom extends Component {
 
     render() {
         console.log(this.state)
+        const {mapStyle = 'mapbox://styles/mapbox/dark-v9'} = this.props;
         return (
             <div>
             <DeckGL
@@ -123,6 +124,7 @@ class HexagonLayerCom extends Component {
                     reuseMaps
                     preventStyleDiffing={true}
                     mapboxApiAccessToken={MAPBOX_TOKEN}
+                    mapStyle={mapStyle}
                 />
             </DeckGL>
                 </div>

@@ -6,8 +6,9 @@ import {Route} from 'react-router'
 import Main from './components/main'
 import store from './store'
 
+
 ReactDOM.render(
-    // redux 를 사용하기 위해서 추가
+    // redux 를 사용하기 위해서 추가입니다
     <Provider store={store}>
         <BrowserRouter> {/*headerRoute 사용*/}
             <Route path='/' component={Main} />

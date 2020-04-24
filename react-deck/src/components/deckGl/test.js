@@ -31,7 +31,7 @@ const DeckTest = () => {
             data,
         })
     ]
-    console.log(layers)
+    console.log('render ',layers)
     return (
         <div>
             <DeckGL
